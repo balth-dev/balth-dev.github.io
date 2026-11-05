@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Rahim · Portfolio Dev</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="vscode-topbar">
+        <div class="file-tabs">
+            <span class="active"><i class="fas fa-code"></i> portfolio </span>
+        </div>
+        <div class="vscode-icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-git-alt"></i>
+            <i class="fas fa-terminal"></i>
+            <i class="fas fa-ellipsis-h"></i>
+        </div>
+    </div>
+
+    <div class="glass-card">
+        <div class="profile-row">
+            <div class="avatar-area">
+            
+                <img class="avatar-img" src="images/photo-pro.jpg" alt="photo de profil" id="profilePhoto">
+                <div class="change-photo-hint">
+                    <i class="fas fa-camera"></i>
+                </div>
+            </div>
+            <div class="info-area">
+                <div class="name-title">
+                    <h1> Rahim TARIME </h1>
+                    
+                </div>
+                <div class="handle">
+                    <i class="fab fa-instagram"></i> balthazar_976 · <i class="fas fa-map-marker-alt"></i> Rennes, France
+                </div>
+                <div class="bio">
+                    <i class="fas fa-terminal"></i> 
+                    Passionné par le code propre et les interfaces réactives. <span class="cursor-blink"></span>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label"><i class="fas fa-rocket"></i> PROJETS</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-label"><i class="fas fa-award"></i> EXP.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills-section">
+        <div class="section-title">
+            <i class="fas fa-cogs"></i> compétences·primaires
+        </div>
+        <div class="skills-badge">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">MySQL</span>
+        </div>
+        <p><a href="https://eduservices-my.sharepoint.com/:x:/g/personal/rahim_tarime_aftec_org/IQAz-NL3Qj8LS4gmYwp-gneeAZyM-C2MiClCFpeaH2yAgAY?e=Peq5g7" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-excel"></i> Voir ma grille de compétence Excel</a></p>
+    </div>
+
+    <div class="projects-section">
+        <div class="section-title">
+            <i class="fas fa-folder-open"></i> derniers·projets
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-title">
+                    <i class="fas fa-database"></i> Création de base de donnée
+                </div>
+                <div class="project-desc">
+                    conçu et implémenté une base de données relationnelle en passant par les étapes de modélisation (MCD/MPD), la création des tables en SQL et la gestion des relations entre les données.
+                </div>
+                <div class="project-tech">
+                    <span class="tech-badge">MySQL</span>
+                </div>
+                <a class="project-link" href="preuves-base-de-donnees.html">
+                    Voir les preuves <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="project-card">
+                <div class="project-title">
+                    <i class="fab fa-react"></i> WebDev
+                </div>
+                <div class="project-desc">
+                    Ce projet consiste en la conception d’une maquette de site web, visant à définir l’organisation visuelle et l’expérience utilisateur.
+                </div>
+                <div class="project-tech">
+                    <span class="tech-badge">HTML</span>
+                    <span class="tech-badge">CSS</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-title">
+                    <i class="fas fa-cloud-sun"></i> AstroWeb
+                </div>
+                <div class="project-desc">
+                    Ce projet consiste en la migration d’une page Web vers WordPress en utilisant PHP pour assurer l’intégration et le fonctionnement du site.
+                </div>
+                <div class="project-tech">
+                    <span class="tech-badge">HTML</span>
+                    <span class="tech-badge">PHP</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <div class="section-title">
+            <i class="fas fa-paper-plane"></i> contact·dev
+        </div>
+        <div class="contact-details">
+            <span><i class="fab fa-github"></i> github/@balth-dev</span>
+            <span><i class="fas fa-envelope"></i> rahimtarime491@gmail.com</span>
+        </div>
+    </div>
+
+<script>
+    (function() {
+        console.log("%c🚀 Portfolio VS Code édition | Carte transparente prête pour ta photo & identité", "color: #007acc; font-family: monospace; font-size: 14px");
+        const avatarImg = document.querySelector('#profilePhoto');
+        if(avatarImg) {
+            console.log("%c💡 Astuce : remplacez l'attribut 'src' de l'image (classe .avatar-img) par le chemin de votre propre photo", "color: #9cdcfe;");
+        }
+        const cards = document.querySelectorAll('.project-card, .glass-card');
+        cards.forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = ((e.clientX - rect.left) / rect.width) * 100;
+                const y = ((e.clientY - rect.top) / rect.height) * 100;
+                card.style.setProperty('--x', `${x}%`);
+                card.style.setProperty('--y', `${y}%`);
+            });
+        });
+    })();
+</script>
+</body>
+</html>
